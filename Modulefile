@@ -1,0 +1,8 @@
+name    'rocha-dms'
+version '0.1.0'
+source 'git://github.com/rochaporto/puppet-dms.git'
+author 'rocha'
+license 'Apache License, Version 2.0 (the "License")'
+summary 'Resources for managing a CERN/IT/GT/DMS cluster'
+description 'This module provides a set of classes and definitions to properly setup and maintain an internal cluster inside the grid data management of CERN IT, grid technology group'
+project_page 'https://svnweb.cern.ch/trac/lcgdm'
