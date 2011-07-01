@@ -20,7 +20,7 @@ class dms::head {
       baseurl  => "http://etics-repository.cern.ch/repository/pm/volatile/repomd/name/lcgdm_head_sl5_x86_64_gcc412",
       gpgcheck => 0,
       enabled  => 1,
-      protect  => 0;
+      protect  => 1;
     "lcgutil-head-etics":
       descr    => "LCGUTIL ETICS Unstable Repository",
       baseurl  => "http://etics-repository.cern.ch/repository/pm/volatile/repomd/name/lcgutil_head_sl5_x86_64_gcc412",
