@@ -2,15 +2,10 @@
 class dms::nightlies::repo {
   include emi2::repos
 
-  $rhel_version = $operatingsystemrelease ? {
-	/.*6\..*/ => "6",
-        default   => "5",
-  }
-
   yumrepo { 
     "lcgdm-nightlies":
       descr    => "lcgdm-nightlies",
-      baseurl  => $rhel_version ? {
+      baseurl  => $lsbmajdistrelease ? {
 	"6" => "http://etics-repository.cern.ch/repository/pm/volatile/repomd/name/emi2_lcgdm_head_epel_sl6_x86_64_gcc446EPEL",
         "5" => "http://etics-repository.cern.ch/repository/pm/volatile/repomd/name/emi2_lcgdm_head_epel_sl5_x86_64_gcc412EPEL"
       },

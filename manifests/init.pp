@@ -1,5 +1,3 @@
-import '*.pp'
-
 class dms {
 
 }
